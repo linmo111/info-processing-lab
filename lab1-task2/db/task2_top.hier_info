@@ -1,0 +1,70 @@
+|task2_top
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+HEX0[0] <= hex_to_7reg:SEG0.port0
+HEX0[1] <= hex_to_7reg:SEG0.port0
+HEX0[2] <= hex_to_7reg:SEG0.port0
+HEX0[3] <= hex_to_7reg:SEG0.port0
+HEX0[4] <= hex_to_7reg:SEG0.port0
+HEX0[5] <= hex_to_7reg:SEG0.port0
+HEX0[6] <= hex_to_7reg:SEG0.port0
+HEX1[0] <= hex_to_7reg:SEG0.port0
+HEX1[1] <= hex_to_7reg:SEG0.port0
+HEX1[2] <= hex_to_7reg:SEG0.port0
+HEX1[3] <= hex_to_7reg:SEG0.port0
+HEX1[4] <= hex_to_7reg:SEG0.port0
+HEX1[5] <= hex_to_7reg:SEG0.port0
+HEX1[6] <= hex_to_7reg:SEG0.port0
+HEX2[0] <= hex_to_7reg:SEG0.port0
+HEX2[1] <= hex_to_7reg:SEG0.port0
+HEX2[2] <= hex_to_7reg:SEG0.port0
+HEX2[3] <= hex_to_7reg:SEG0.port0
+HEX2[4] <= hex_to_7reg:SEG0.port0
+HEX2[5] <= hex_to_7reg:SEG0.port0
+HEX2[6] <= hex_to_7reg:SEG0.port0
+
+
+|task2_top|hex_to_7reg:SEG0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+out[13] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+out[14] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out[15] <= <GND>
+out[16] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out[17] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out[18] <= in[8].DB_MAX_OUTPUT_PORT_TYPE
+out[19] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out[20] <= in[9].DB_MAX_OUTPUT_PORT_TYPE
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+in[4] => Decoder1.IN3
+in[5] => Decoder1.IN2
+in[6] => Decoder1.IN1
+in[7] => Decoder1.IN0
+in[8] => Decoder2.IN1
+in[8] => out[18].DATAIN
+in[9] => Decoder2.IN0
+in[9] => out[20].DATAIN
+
+
